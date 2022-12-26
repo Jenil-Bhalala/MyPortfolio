@@ -27,7 +27,7 @@
     /* it gives padding from top right bottom left*/
     padding: 50px;
 
-    height: 50%;
+    height: 70%;
 
     /* giving line-space*/
     display: flex;
@@ -59,15 +59,9 @@
     25%{
         transform: translateY(-50px);
     }   
-    50%{
+    /* 50%{
         transform: translateY(-100px);
-    }    
-    75%{
-        transform: translateY(-150px);
-    }    
-    100%{
-        transform: translateY(-200px);
-    }    
+    }     */
 }
 
 .i-title-item{
@@ -79,6 +73,50 @@
     /* it will center vertically in specific height */
     display: flex;
     align-items: center;
+}
+
+/* .i-desc{
+    margin-top: 10px;
+} */
+
+.i-btns{
+    display: flex;
+}
+
+.i-btn1{
+    display: block;
+    width: 110px;
+    height: 23px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #15ea55;
+    color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.i-btn2{
+    display: block;
+    width: 110px;
+    height: 23px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #15ea55;
+    border: 2px solid #15ea55;
+    color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.i-btn1:hover{
+    background-color: #15ea55;
 }
 
 .i-scroll{
@@ -109,6 +147,18 @@
 @media screen and (max-width: 480px) {
     .i{
         flex-direction: column;
+    }
+
+    .i-left{
+        flex: 2.5;
+    }
+
+    .i-right{
+        flex: 1.5;
+    }
+
+    .i-btns{
+        margin-top: 10px;
     }
 
     .i-left-wrapper{

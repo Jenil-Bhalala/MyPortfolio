@@ -8,7 +8,7 @@ const ProductList = () => {
         <div className="pl-texts">
             <h1 className="pl-title">Projects</h1>
             <p className="pl-desc">
-                I have made some projects in Django, PHP and MERN stack.
+                I have made some projects in MERN stack.
             </p>
         </div>
         <div className="pl-list">

@@ -46,6 +46,17 @@
     margin-right: 20px;
 }
 
+.c-icon-address{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-left: 4px;
+}
+
+.c-address{
+    margin-left: 6px;
+}
+
 .c-desc{
     font-weight: 200;
 }
@@ -69,6 +80,7 @@ textarea{
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    border: none;
 }
 
 button{
@@ -78,15 +90,30 @@ button{
     color: white;
     font-weight: 500;
     cursor: pointer;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 480px) {
     .c-wrapper{
         flex-direction: column;
         padding: 0px 50px;
+        height: 100vh;
+    }
+
+    .c-left{
+        flex: 1.5;
+    }
+
+    .c-right{
+        flex: 2.5;
     }
 
     .c-title{
+        margin-top: 20px;
         font-size: 40px;
         font-weight: 400;
         width: 100%;
@@ -108,7 +135,6 @@ button{
     }
 
     input{
-        width: 35%;
         height: 40px;
         margin: 10px;
         margin-left: 0px;
