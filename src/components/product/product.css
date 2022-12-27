@@ -1,4 +1,4 @@
-.p{
+/* .p{
     width: 30%;
     height: 40vh;
     margin: 20px 10px;
@@ -38,4 +38,126 @@
         width: 40%;
         height: 20vh;
     }
+} */
+
+.p{
+    width: 30%;
+    height: 50vh;
+    margin: 20px 10px;
+    border: 2px solid rgb(243, 242, 242);
+    border-radius: 10px;
+    overflow: hidden;
 }
+
+.p-img{
+    width: 100%;
+    height: 35vh;
+    object-fit: contain;
+}
+
+.p-title{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.p-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-btn1{
+    width: 60px;
+    height: 14px;
+    margin-top: 6px;
+    margin-left: 20px ;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #7be69b;
+    color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.p-btn2{
+    width: 100px;
+    height: 14px;
+    margin-top: 6px;
+    margin-right: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7be69b;
+    border: 1px solid #7be69b;
+    color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.p-btn1:hover{
+    background-color: #7be69b;
+}
+
+@media screen and (max-width: 480px) {
+    .p{
+        width: 40%;
+        height: 20vh;
+    }
+
+    .p-img{
+        width: 100%;
+        height: 14vh;
+        object-fit: contain;
+    }
+
+    .p-title{
+        font-size: 9px;
+        font-weight: 300;
+    }
+
+    .p-btns{
+        display: flex;
+        margin-top: 3px;
+    }
+
+    .p-btn1{
+        width: 25px;
+        height: 3px;
+        margin-left: 10px ;
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #7be69b;
+        color: white;
+        border-radius: 5px;
+        font-size: 8px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .p-btn2{
+        width: 50px;
+        height: 3px;
+        margin-right: 10px;
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #7be69b;
+        border: 1px solid #7be69b;
+        color: white;
+        border-radius: 5px;
+        font-size: 8px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .p-btn1:hover{
+        background-color: #7be69b;
+    }
+} 

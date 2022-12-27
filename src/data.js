@@ -6,16 +6,22 @@ export const products = [
     {
         id: 1,
         img: img1,
-        link: "http://lama.dev",
+        live: "https://jenilbhalala.vercel.app/",
+        title: "JobPortal (MERN Stack)",
+        codelink: "https://github.com/bhavinbabariya03/jobportal" 
     },
     {
         id: 2,
         img: img2,
-        link: "http://lama.dev",
+        live: "https://jenilbhalala.vercel.app/",
+        title: "iChat (SocketIO)",
+        codelink: "https://github.com/Jenil-Bhalala/iChat"
     },
     {
         id: 3,
         img: img3,
-        link: "http://lama.dev",
+        live: "https://jenilbhalala.vercel.app/",
+        title: "Portfolio (ReactJS)",
+        codelink: "https://github.com/Jenil-Bhalala/MyPortfolio"
     },
 ]

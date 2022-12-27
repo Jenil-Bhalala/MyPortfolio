@@ -1,5 +1,5 @@
 .pl{
-    height: 80vh;
+    height: 90vh;
     padding: 50px 100px;
     display: flex;
     flex-direction: column;
@@ -31,6 +31,7 @@
 @media screen and (max-width: 480px) {
     .pl{
         padding: 10px;
+        height: 80vh;
     }
 
     .pl-texts{

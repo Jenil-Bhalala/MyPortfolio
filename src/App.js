@@ -15,7 +15,7 @@ const App = () => {
       backgroundColor: darkMode ? '#222' : 'white',
       color: darkMode && 'white'
     }}>
-      <Toggle/>
+      {/* <Toggle/> */}
       <Intro/>
       <About/>
       <ProductList/>
