@@ -4,6 +4,8 @@ import emailjs from '@emailjs/browser';
 import { useContext } from 'react'
 import { ThemeContext } from '../../context'
 import { FaEnvelope, FaHome, FaPhone } from "react-icons/fa";
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 const Contact = () => {
     const formRef = useRef();
@@ -17,9 +19,14 @@ const Contact = () => {
         emailjs.sendForm('service_ofool0o', 'template_bul4hgm', formRef.current, '92aFZgRt0rg7ez2TF').then((result) => {
             console.log(result.text);
             setDone(true);
+            done && notify();
         }, (error) => {
             console.log(error.text);
         });
+    }
+
+    const notify = () => {
+        toast.success("Thank you for contacting me, I will reach you soon!", {position: toast.POSITION.BOTTOM_RIGHT});
     }
 
     return (
@@ -48,12 +55,12 @@ const Contact = () => {
                         <b>What's your story?</b> Get in touch. Always available for freelancing if the right project comes along me.
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}>
-                        <input style={{ backgroundColor: darkMode && "#333" }} type='text' placeholder='Name' name="user_name" required/>
-                        <input style={{ backgroundColor: darkMode && "#333" }} type='text' placeholder='Subject' name="user_subject" required/>
-                        <input style={{ backgroundColor: darkMode && "#333" }} type='email' placeholder='Email' name="user_email" required/>
-                        <textarea style={{ backgroundColor: darkMode && "#333" }} rows="5" placeholder="Message" name="message" required/>
+                        <input style={{ backgroundColor: darkMode && "#333", color: darkMode && "white" }} type='text' placeholder='Name' name="user_name" required/>
+                        <input style={{ backgroundColor: darkMode && "#333", color: darkMode && "white" }} type='text' placeholder='Subject' name="user_subject" required/>
+                        <input style={{ backgroundColor: darkMode && "#333", color: darkMode && "white" }} type='email' placeholder='Email' name="user_email" required/>
+                        <textarea style={{ backgroundColor: darkMode && "#333", color: darkMode && "white" }} rows="5" placeholder="Message" name="message" required/>
                         <button>Submit</button>
-                        {done && "Thank you for contact me!"}
+                        <ToastContainer />
                     </form>
                 </div>
             </div>
